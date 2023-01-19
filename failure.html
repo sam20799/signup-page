@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failure</title>
+    <!-- Bootstrap addition -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row align-items-md-stretch">
+        <div class="">
+          <div class="h-100 p-5 text-bg-dark ">
+            <h2>Oops..</h2>
+            <p>There was error signing up! Please try again.</p>
+            <form action="/failure" method="POST">
+                <button class="btn btn-lg btn-warning" type="submit" name="button">Try Again!</button>
+            </form>
+          </div>
+        </div>
+</body>
+</html>
+
+<!-- we placed button inside form so that we can post/send it's data to server
+/failure only because failure is seperate page and it's root is this only 
+in action we write root from where we need to send data
+in app.js we redirect from /failure to / i.e webpage root (once we click on try again button) -->
